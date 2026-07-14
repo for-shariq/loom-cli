@@ -1,6 +1,6 @@
 [project]
 name = "loom"
-version = "0.1.0"
+version = "0.1.2"
 description = "Install curated AI agent skills into any repository"
 readme = "README.md"
 authors = [
