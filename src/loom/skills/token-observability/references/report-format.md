@@ -22,5 +22,5 @@ Every report produced by this skill must include the following sections.
 
 ## Report location
 
-Write reports to `.grimoire/reports/token-observability-<timestamp>.md`
+Write reports to `.loom/reports/token-observability-<timestamp>.md`
 when possible. Fall back to `token-observability-report.md` at repo root.
