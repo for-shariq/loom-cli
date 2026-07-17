@@ -8,7 +8,7 @@ console = Console()
 
 def run():
     skills = list_skills()
-    table = Table(title="Loom Skills Catalog", show_lines=True)
+    table = Table(title="loom-cli Skills Catalog", show_lines=True)
     table.add_column("Skill", style="cyan", no_wrap=True)
     table.add_column("Version", style="magenta")
     table.add_column("Description")

@@ -1,4 +1,4 @@
-"""Loom CLI entry point."""
+"""loom-cli CLI entry point."""
 import typer
 from rich.console import Console
 
@@ -8,11 +8,11 @@ from .commands import list_cmd, install, remove, upgrade, add, doctor
 
 console = Console()
 app = typer.Typer(
-    name="loom",
-    help="Loom — install curated AI agent skills into any repository.",
+    name="loom-cli",
+    help="loom-cli - install curated AI agent skills into any repository.",
     no_args_is_help=True,
 )
-#app.add_typer(login_cmd.app, name="")  # exposes `loom login` and `loom logout`
+#app.add_typer(login_cmd.app, name="")  # exposes `loom-cli login` and `loom-cli logout`
 
 
 @app.command("list")
@@ -70,9 +70,9 @@ def doctor_command():
 
 @app.command("version")
 def version_command():
-    """Show Loom version."""
+    """Show loom-cli version."""
     from . import __version__
-    console.print(f"loom {__version__}")
+    console.print(f"loom-cli {__version__}")
 
 
 if __name__ == "__main__":

@@ -2,7 +2,7 @@
 """Heuristic token audit for prompt/instruction files in a repository.
 
 Stdlib-only by design: this script is copied into arbitrary consumer repos
-via `loom install`, which may not have any third-party tokenizer installed.
+via `loom-cli install`, which may not have any third-party tokenizer installed.
 It uses a chars-per-token heuristic (~4 chars/token for English text), which
 is accurate enough to rank files and flag oversized ones -- it is not a
 substitute for a real tokenizer when exact counts matter.

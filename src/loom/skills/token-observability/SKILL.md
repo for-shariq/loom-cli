@@ -9,7 +9,7 @@ description: >
 license: MIT
 compatibility: Requires python3
 metadata:
-  author: loom
+  author: loom-cli
   version: "1.0"
 ---
 

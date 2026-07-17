@@ -1,9 +1,9 @@
 {
-  "version": "0.2.0",
+  "version": "0.1.0",
 
   "configurations": [
     {
-      "name": "loom: list",
+      "name": "loom-cli: list",
 
       "type": "debugpy",
 
@@ -19,7 +19,7 @@
     },
 
     {
-      "name": "loom: install python-coding-standards",
+      "name": "loom-cli: install python-coding-standards",
 
       "type": "debugpy",
 
@@ -43,7 +43,7 @@
     },
 
     {
-      "name": "loom: doctor",
+      "name": "loom-cli: doctor",
 
       "type": "debugpy",
 

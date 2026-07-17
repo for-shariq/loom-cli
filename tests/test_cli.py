@@ -13,4 +13,4 @@ def test_list_runs():
 def test_version():
     result = runner.invoke(app, ["version"])
     assert result.exit_code == 0
-    assert "loom" in result.stdout
+    assert "loom-cli" in result.stdout
