@@ -315,6 +315,10 @@ loom doctor
 - The `install` command installs catalog skills into a repository.
 - The `add` command scaffolds a new custom skill.
 
+## Docs
+
+- [Token Observability Skill Guide](docs/skills/token-obserabilty.md)
+
 ## License
 
 Loom is open source, released under the [MIT License](LICENSE). Any use, distribution, or derivative work must credit Loom and reference its repository URL: https://github.com/for-shariq/loom-cli
