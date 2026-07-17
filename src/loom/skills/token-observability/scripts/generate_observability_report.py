@@ -37,7 +37,7 @@ def main() -> int:
     root = Path.cwd()
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
 
-    output_dir = root / ".grimoire" / "reports"
+    output_dir = root / ".loomcliRpts" / "reports"
     output_dir.mkdir(parents=True, exist_ok=True)
     output_path = output_dir / f"token-observability-{timestamp}.md"
 

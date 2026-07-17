@@ -102,7 +102,7 @@ python src/loom/skills/token-observability/scripts/generate_observability_report
 
 Report output location:
 
-- `.grimoire/reports/token-observability-<timestamp>.md`
+- `.loomcliRpts/reports/token-observability-<timestamp>.md`
 
 ## Suggested workflow
 
