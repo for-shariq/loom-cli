@@ -2,7 +2,7 @@
 
 `loom` is a command-line tool for installing and managing curated AI agent skills in any repository.
 
-[![Python 3.13+](https://img.shields.io/badge/python-3.13+-blue.svg)](https://www.python.org/downloads/)
+[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 This README covers only how to install and use the CLI.
@@ -20,7 +20,7 @@ With `loom`, you can:
 
 ## Requirements
 
-- Python 3.13 or later
+- Python 3.11 or later
 - [`uv`](https://docs.astral.sh/uv/) installed
 - A local repository you want to work in
 

@@ -6,7 +6,7 @@ readme = "README.md"
 authors = [
     { name = "Shariq Khan", email = "shariqnasir@outlook.com" }
 ]
-requires-python = ">=3.13"
+requires-python = ">=3.11"
 dependencies = [
     "cryptography>=49.0.0",
     "httpx>=0.28.1",
