@@ -1,6 +1,6 @@
 [project]
-name = "loom"
-version = "0.1.2"
+name = "loom-cli"
+version = "0.1.0"
 description = "Install curated AI agent skills into any repository"
 readme = "README.md"
 authors = [
@@ -20,7 +20,7 @@ dependencies = [
 
 
 [project.scripts]
-loom = "loom.cli:app"
+loom-cli = "loom.cli:app"
 
 [build-system]
 requires = ["uv_build>=0.11.28,<0.12.0"]

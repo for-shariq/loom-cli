@@ -1,6 +1,6 @@
 # Token Observability Skill Guide
 
-This guide explains how to use the `token-observability` skill in Loom.
+This guide explains how to use the `token-observability` skill in loom-cli.
 
 ## What it does
 
@@ -32,18 +32,18 @@ Use this skill when you need answers to questions like:
 - Did my refactor reduce token usage?
 - How much can I save by moving examples out of always-on context?
 
-## Install the skill with Loom
+## Install the skill with loom-cli
 
 Run from the repository root:
 
 ```powershell
-loom install token-observability --target copilot
+loom-cli install token-observability --target copilot
 ```
 
 You can also install for all supported targets:
 
 ```powershell
-loom install token-observability --target all
+loom-cli install token-observability --target all
 ```
 
 ## Run the scripts manually

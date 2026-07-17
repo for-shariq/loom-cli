@@ -1,15 +1,15 @@
 # loom-cli
 
-`loom` is a command-line tool for installing and managing curated AI agent skills in any repository.
+`loom-cli` is a command-line tool for installing and managing curated AI agent skills in any repository.
 
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 This README covers only how to install and use the CLI.
 
-## What Loom Does
+## What loom-cli Does
 
-With `loom`, you can:
+With `loom-cli`, you can:
 
 - list available skills
 - install one or more skills into the current repository
@@ -26,48 +26,48 @@ With `loom`, you can:
 
 ## Install
 
-Install `loom` directly from the GitHub repository using `uv`:
+Install `loom-cli` directly from the GitHub repository using `uv`:
 
 ````powershell
-uv tool install loom --from git+https://github.com/for-shariq/loom-cli.git@v0.1.0
+uv tool install loom-cli --from git+https://github.com/for-shariq/loom-cli.git@v0.1.0
 ````
 
 ### Verify installation
 
 ````powershell
-loom --help
+loom-cli --help
 ````
 
 If the command is not recognized after installation, restart the terminal and try again.
 
-### Upgrading loom
+### Upgrading loom-cli
 
 To upgrade to a newer release tag, reinstall with the new tag and `--force`:
 
 ````powershell
-uv tool install loom --from git+https://github.com/for-shariq/loom-cli.git@<new-tag> --force
+uv tool install loom-cli --from git+https://github.com/for-shariq/loom-cli.git@<new-tag> --force
 ````
 
 ## Quick Start
 
-Open a terminal in the repository where you want to use Loom.
+Open a terminal in the repository where you want to use loom-cli.
 
 ### 1. List available skills
 
 ````powershell
-loom list
+loom-cli list
 ````
 
 ### 2. Install a skill into the current repository
 
 ````powershell
-loom install <skill-name>
+loom-cli install <skill-name>
 ````
 
 Example:
 
 ````powershell
-loom install testing
+loom-cli install testing
 ````
 
 ## Usage
@@ -79,13 +79,13 @@ Run all commands from the root of the repository you want to update.
 Show all skills available in the catalog.
 
 ````powershell
-loom list
+loom-cli list
 ````
 
 Help:
 
 ````powershell
-loom list --help
+loom-cli list --help
 ````
 
 ### Install skills
@@ -93,43 +93,43 @@ loom list --help
 Install one or more catalog skills into the current repository.
 
 ````powershell
-loom install <skill-name>
+loom-cli install <skill-name>
 ````
 
 Install multiple skills:
 
 ````powershell
-loom install <skill-one> <skill-two>
+loom-cli install <skill-one> <skill-two>
 ````
 
 Install all available skills:
 
 ````powershell
-loom install --all
+loom-cli install --all
 ````
 
 Install for a specific target:
 
 ````powershell
-loom install <skill-name> --target copilot
+loom-cli install <skill-name> --target copilot
 ````
 
 Force overwrite existing installed skills:
 
 ````powershell
-loom install <skill-name> --force
+loom-cli install <skill-name> --force
 ````
 
 Install everything at once (all skills, all targets, overwriting existing ones):
 
 ````powershell
-loom install --all --target all --force
+loom-cli install --all --target all --force
 ````
 
 Help:
 
 ````powershell
-loom install --help
+loom-cli install --help
 ````
 
 Supported install targets:
@@ -145,25 +145,25 @@ Supported install targets:
 Remove one or more installed skills.
 
 ````powershell
-loom remove <skill-name>
+loom-cli remove <skill-name>
 ````
 
 Remove multiple skills:
 
 ````powershell
-loom remove <skill-one> <skill-two>
+loom-cli remove <skill-one> <skill-two>
 ````
 
 Remove from a specific target:
 
 ````powershell
-loom remove <skill-name> --target all
+loom-cli remove <skill-name> --target all
 ````
 
 Help:
 
 ````powershell
-loom remove --help
+loom-cli remove --help
 ````
 
 ### Upgrade installed skills
@@ -171,19 +171,19 @@ loom remove --help
 Upgrade installed skills to the latest catalog version.
 
 ````powershell
-loom upgrade
+loom-cli upgrade
 ````
 
 Upgrade a specific target:
 
 ````powershell
-loom upgrade --target all
+loom-cli upgrade --target all
 ````
 
 Help:
 
 ````powershell
-loom upgrade --help
+loom-cli upgrade --help
 ````
 
 ### Add a custom skill
@@ -191,25 +191,25 @@ loom upgrade --help
 Scaffold a new custom skill in the repository.
 
 ````powershell
-loom add <skill-name>
+loom-cli add <skill-name>
 ````
 
 Example:
 
 ````powershell
-loom add my-custom-skill
+loom-cli add my-custom-skill
 ````
 
 Specify a target:
 
 ````powershell
-loom add my-custom-skill --target copilot
+loom-cli add my-custom-skill --target copilot
 ````
 
 Help:
 
 ````powershell
-loom add --help
+loom-cli add --help
 ````
 
 ### Validate installed skills
@@ -217,25 +217,25 @@ loom add --help
 Validate installed skills against the supported spec.
 
 ````powershell
-loom doctor
+loom-cli doctor
 ````
 
 Help:
 
 ````powershell
-loom doctor --help
+loom-cli doctor --help
 ````
 
 ### Show version
 
 ````powershell
-loom version
+loom-cli version
 ````
 
 Help:
 
 ````powershell
-loom version --help
+loom-cli version --help
 ````
 
 ## CLI Help
@@ -243,19 +243,19 @@ loom version --help
 ### Top-level help
 
 ````powershell
-loom --help
+loom-cli --help
 ````
 
 ### Command help
 
 ````powershell
-loom list --help
-loom install --help
-loom remove --help
-loom upgrade --help
-loom add --help
-loom doctor --help
-loom version --help
+loom-cli list --help
+loom-cli install --help
+loom-cli remove --help
+loom-cli upgrade --help
+loom-cli add --help
+loom-cli doctor --help
+loom-cli version --help
 ````
 
 ## Common Examples
@@ -263,55 +263,55 @@ loom version --help
 List skills:
 
 ````powershell
-loom list
+loom-cli list
 ````
 
 Install a skill:
 
 ````powershell
-loom install testing
+loom-cli install testing
 ````
 
 Install multiple skills:
 
 ````powershell
-loom install testing docs ci
+loom-cli install testing docs ci
 ````
 
 Install all skills:
 
 ````powershell
-loom install --all
+loom-cli install --all
 ````
 
 Install all skills for all targets, overwriting existing ones:
 
 ````powershell
-loom install --all --target all --force
+loom-cli install --all --target all --force
 ````
 
 Remove a skill:
 
 ````powershell
-loom remove testing
+loom-cli remove testing
 ````
 
 Upgrade installed skills:
 
 ````powershell
-loom upgrade
+loom-cli upgrade
 ````
 
 Validate installed skills:
 
 ````powershell
-loom doctor
+loom-cli doctor
 ````
 
 ## Notes
 
-- Run Loom inside the repository you want to update.
-- Use `loom --help` or `<command> --help` to see the latest supported options.
+- Run loom-cli inside the repository you want to update.
+- Use `loom-cli --help` or `<command> --help` to see the latest supported options.
 - The `install` command installs catalog skills into a repository.
 - The `add` command scaffolds a new custom skill.
 
@@ -321,4 +321,4 @@ loom doctor
 
 ## License
 
-Loom is open source, released under the [MIT License](LICENSE). Any use, distribution, or derivative work must credit Loom and reference its repository URL: https://github.com/for-shariq/loom-cli
+loom-cli is open source, released under the [MIT License](LICENSE). Any use, distribution, or derivative work must credit loom-cli and reference its repository URL: https://github.com/for-shariq/loom-cli
